@@ -172,8 +172,8 @@ function todayKey() {
   return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
 }
 function dayNumber() {
-  const start = new Date(2026, 0, 1), d = new Date();
-  return Math.floor((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - start) / 864e5) + 1;
+  const start = new Date(2026, 10, 18), d = new Date(); // launch day = Day 0
+  return Math.floor((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - start) / 864e5);
 }
 function makePuzzle(dateKey) {
   const rng = mulberry32(hashStr("populatle:" + dateKey));
