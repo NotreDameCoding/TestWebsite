@@ -7,7 +7,7 @@ A daily geography game. You get a continent and a population. Draw a loop around
 - Progress, streaks and a shareable emoji result are saved in the browser.
 
 ## Run it
-It's one file: `index.html`. Open it through any web server, or turn on **GitHub Pages** (Settings → Pages → deploy from `main`).
+Files: `index.html` (page layout), `style.css` (theme and look), `script.js` (game logic, map and music). Open it through any web server, or turn on **GitHub Pages** (Settings → Pages → deploy from `main`).
 Opening the file directly (`file://`) won't load the map, because browsers block that.
 
 ## Map data
